@@ -1,0 +1,55 @@
+/* src/pages/admin-dashboard/logs-audit.module.css */
+.logs-audit {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #f0f2f5;
+  min-height: 100vh; /* 让仪表盘至少填充整个视口的高度 */
+}
+
+.widget {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.widgetTitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.widgetContent {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.widgetValue {
+  font-size: 2.4rem;
+  color: #000;
+}
+
+.widgetChange {
+  font-size: 1rem;
+  color: #4caf50; /* 根据数据的正负，您可能需要改变颜色 */
+}
+
+/* 以下是响应式布局，确保在不同屏幕尺寸下也能保持良好的布局 */
+@media (min-width: 768px) {
+  .logs-audit {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .widget {
+    flex: 1 1 300px; /* 确保小部件可以根据需要伸缩并保持最小宽度 */
+  }
+}
+
+/* 您可以根据实际需要继续添加更多样式 */

@@ -53,7 +53,7 @@ const LoginPage = (props) => {
 
       //mock login
       if (loginForm.email !== 'error@example.com') {
-        navigate('/account');
+        navigate('/account');         //account,admin-dashboard
         window.localStorage.setItem('key', 'sampleToken');
       } else {
         window.scrollTo(0, 0);

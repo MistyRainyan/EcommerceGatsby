@@ -1,0 +1,35 @@
+/* components/ProductForm/ProductForm.module.css */
+
+/* 根容器样式 */
+.root {
+  margin-top: 32px;
+}
+
+/* 表单输入字段容器样式 */
+.inputContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* 操作按钮容器样式 */
+.actionContainers {
+  max-width: 200px;
+  display: flex;
+  gap: 16px;
+}
+
+/* 响应式布局：小屏幕下，将表单字段容器设置为单列 */
+@media (max-width: 800px) {
+  .inputContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 响应式布局：更小屏幕下，操作按钮容器设置为纵向排列 */
+@media (max-width: 500px) {
+  .actionContainers {
+    max-width: unset;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,69 @@
+/* src/pages/admin-dashboard/product-management.module.css */
+
+/* Product 单个产品卡片样式（包含响应式布局） */
+.product {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* 响应式布局 */
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* 通过继承 .product 样式，使其他元素也具有响应式布局 */
+.productList,
+.buttons,
+.productFormContainer {
+  /* 继承 .product 的样式 */
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* 响应式布局（继承自 .product） */
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* widget 样式保持不变 */
+.widget {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.widgetTitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.widgetContent {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.widgetValue {
+  font-size: 2.4rem;
+  color: #000;
+}
+
+.widgetChange {
+  font-size: 1rem;
+  color: #4caf50; /* 根据数据的正负，您可能需要改变颜色 */
+}
+
+/* 您可以根据实际需要继续添加更多样式 */

@@ -6,7 +6,7 @@
   "author": "杜 <f@oky.services>, Matter Design",
   "dependencies": {
     "@netlify/plugin-gatsby": "^3.7.2",
-    "chart.js": "^3.7.0",
+    "chart.js": "^4.0.0-release",
     "gatsby": "^5.12.12",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.12.3",
